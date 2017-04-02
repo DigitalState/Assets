@@ -1,0 +1,15 @@
+parameters:
+    database_host: database8011
+    database_port: ~
+    database_name: ds_assets
+    database_user: ds_assets
+    database_password: ds_assets
+
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: ~
+    mailer_password: ~
+
+    secret: ThisTokenIsNotSoSecretChangeIt
+
+    cors_allow_origin: http://localhost

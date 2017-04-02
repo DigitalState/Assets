@@ -1,0 +1,3 @@
+services:
+    ds_asset.service.asset:
+        class: Ds\Bundle\AssetBundle\Service\AssetService
