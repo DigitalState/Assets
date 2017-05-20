@@ -24,7 +24,11 @@ class AppKernel extends Kernel
             new Dunglas\ActionBundle\DunglasActionBundle(),
             new ApiPlatform\Core\Bridge\Symfony\Bundle\ApiPlatformBundle(),
             new Nelmio\CorsBundle\NelmioCorsBundle(),
-            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Knp\DoctrineBehaviors\Bundle\DoctrineBehaviorsBundle(),
+            new Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle(),
+            new Ds\Component\Model\Bridge\Symfony\Bundle\DsModelBundle(),
+            new Ds\Component\Security\Bridge\Symfony\Bundle\DsSecurityBundle(),
+            new Ds\Component\Session\Bridge\Symfony\Bundle\DsSessionBundle(),
             new Ds\Bundle\AssetBundle\DsAssetBundle(),
         ];
 
@@ -67,6 +71,6 @@ class AppKernel extends Kernel
      */
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
+        $loader->load($this->getRootDir().'/config/'.$this->getEnvironment().'/config.yml');
     }
 }

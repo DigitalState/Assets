@@ -1,0 +1,5 @@
+ds_security:
+    acl:
+        permissions:
+            asset:             { entity: Ds\Bundle\AssetBundle\Entity\Asset, attributes: [BROWSE, READ, EDIT, ADD, DELETE] }
+            asset_field:       { field:  Ds\Bundle\AssetBundle\Entity\Asset.*, attributes: [BROWSE, READ, EDIT] }

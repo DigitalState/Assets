@@ -1,3 +1,20 @@
 services:
     ds_asset.service.asset:
         class: Ds\Bundle\AssetBundle\Service\AssetService
+
+    ds_asset.service.asset_association:
+        class: Ds\Bundle\AssetBundle\Service\AssetAssociationService
+
+    ds_asset.filter.asset:
+        parent: api_platform.doctrine.orm.search_filter
+        arguments:
+            - { uuid: exact }
+        tags:
+            - { name: api_platform.filter, id: ds_asset.filter.asset }
+
+    ds_asset.filter.asset_association:
+        parent: api_platform.doctrine.orm.search_filter
+        arguments:
+            - { uuid: exact }
+        tags:
+            - { name: api_platform.filter, id: ds_asset.filter.asset_association }

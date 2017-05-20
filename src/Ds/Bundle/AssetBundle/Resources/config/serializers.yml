@@ -1,7 +1,0 @@
-services:
-    ds_asset.serializer.context_builder.asset:
-        decorates: api_platform.serializer.context_builder
-        class: Ds\Bundle\AssetBundle\Serializer\ContextBuilder\AssetContextBuilder
-        arguments:
-            - "@ds_asset.serializer.context_builder.asset.inner"
-            - "@security.authorization_checker"
