@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Class AssetTranslation
  *
  * @ORM\Entity
- * @ORM\Table(name="ds_asset_translation")
+ * @ORM\Table(name="ds_asset_trans")
  */
 class AssetTranslation
 {
