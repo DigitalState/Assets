@@ -33,5 +33,5 @@ monolog:
 #    delivery_address: me@example.com
 
 api_platform:
-    enable_swagger: false
-    enable_swagger_ui: false
+    enable_swagger: true
+    enable_swagger_ui: true
