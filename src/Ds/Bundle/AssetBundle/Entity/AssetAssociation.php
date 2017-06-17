@@ -2,8 +2,8 @@
 
 namespace Ds\Bundle\AssetBundle\Entity;
 
-use Ds\Component\Entity\Entity\Association;
-use Ds\Bundle\AssetBundle\Accessor;
+use Ds\Component\Association\Entity\Association;
+use Ds\Bundle\AssetBundle\Attribute\Accessor;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use ApiPlatform\Core\Annotation\ApiProperty;

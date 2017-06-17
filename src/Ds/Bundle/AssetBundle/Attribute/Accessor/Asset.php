@@ -1,6 +1,6 @@
 <?php
 
-namespace Ds\Bundle\AssetBundle\Accessor;
+namespace Ds\Bundle\AssetBundle\Attribute\Accessor;
 
 use Ds\Bundle\AssetBundle\Entity\Asset as AssetEntity;
 
