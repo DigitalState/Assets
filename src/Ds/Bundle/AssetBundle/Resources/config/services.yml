@@ -1,6 +1,9 @@
 services:
     ds_asset.service.asset:
         class: Ds\Bundle\AssetBundle\Service\AssetService
+        arguments:
+            - '@doctrine.orm.entity_manager'
+            - Ds\Bundle\AssetBundle\Entity\Asset
 
     ds_asset.service.asset_association:
         class: Ds\Bundle\AssetBundle\Service\AssetAssociationService
