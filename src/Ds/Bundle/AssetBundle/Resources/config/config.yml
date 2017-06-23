@@ -3,15 +3,15 @@ parameters:
 
 ds_security:
     permissions:
-        asset:               { title: Asset,         entity: '%_asset%',   attributes: [BROWSE, READ, EDIT, ADD, DELETE] }
-        asset_field:         { title: All Fields,    field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
-        asset_id:            { title: ID,            field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
-        asset_uuid:          { title: UUID,          field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
-        asset_created_at:    { title: Created At,    field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
-        asset_updated_at:    { title: Updated At,    field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
-        asset_deleted_at:    { title: Deleted At,    field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
-        asset_owner:         { title: Owner,         field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
-        asset_owner_uuid:    { title: Owner UUID,    field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
-        asset_identity:      { title: Identity,      field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
-        asset_identity_uuid: { title: Identity UUID, field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
-        asset_title:         { title: Title,         field:  '%_asset%.*', attributes: [BROWSE, READ, EDIT] }
+        asset:               { title: Asset,         entity: '%_asset%',              attributes: [BROWSE, READ, EDIT, ADD, DELETE] }
+        asset_field:         { title: All Fields,    field:  '%_asset%.*',            attributes: [BROWSE, READ, EDIT] }
+        asset_id:            { title: ID,            field:  '%_asset%.id',           attributes: [BROWSE, READ, EDIT] }
+        asset_uuid:          { title: UUID,          field:  '%_asset%.uuid',         attributes: [BROWSE, READ, EDIT] }
+        asset_created_at:    { title: Created At,    field:  '%_asset%.createdAt',    attributes: [BROWSE, READ, EDIT] }
+        asset_updated_at:    { title: Updated At,    field:  '%_asset%.updatedAt',    attributes: [BROWSE, READ, EDIT] }
+        asset_deleted_at:    { title: Deleted At,    field:  '%_asset%.deletedAt',    attributes: [BROWSE, READ, EDIT] }
+        asset_owner:         { title: Owner,         field:  '%_asset%.owner',        attributes: [BROWSE, READ, EDIT] }
+        asset_owner_uuid:    { title: Owner UUID,    field:  '%_asset%.ownerUuid',    attributes: [BROWSE, READ, EDIT] }
+        asset_identity:      { title: Identity,      field:  '%_asset%.identity',     attributes: [BROWSE, READ, EDIT] }
+        asset_identity_uuid: { title: Identity UUID, field:  '%_asset%.identityUuid', attributes: [BROWSE, READ, EDIT] }
+        asset_title:         { title: Title,         field:  '%_asset%.title',        attributes: [BROWSE, READ, EDIT] }
