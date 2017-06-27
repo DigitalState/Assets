@@ -25,7 +25,7 @@ services:
         parent: ds_translation.doctrine.orm.filter.search
         arguments:
             -
-                title: ~
+                title: partial
         tags:
             - { name: api_platform.filter, id: ds.asset.search_translation }
 
