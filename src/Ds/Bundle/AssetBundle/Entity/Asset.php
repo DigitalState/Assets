@@ -7,6 +7,7 @@ use Ds\Component\Model\Type\Uuidentifiable;
 use Ds\Component\Model\Type\Ownable;
 use Ds\Component\Model\Type\Translatable;
 use Ds\Component\Model\Type\Identitiable;
+use Ds\Component\Model\Type\Versionable;
 use Ds\Component\Model\Attribute\Accessor;
 use Ds\Component\Association\Attribute\Accessor as EntityAccessor;
 use Knp\DoctrineBehaviors\Model as Behavior;
@@ -25,9 +26,13 @@ use Symfony\Bridge\Doctrine\Validator\Constraints as ORMAssert;
  *
  * @ApiResource(
  *      attributes={
- *          "filters"={"ds_asset.filter.asset"},
- *          "normalization_context"={"groups"={"asset_output"}},
- *          "denormalization_context"={"groups"={"asset_input"}}
+ *          "filters"={"ds.asset.search", "ds.asset.search_translation", "ds.asset.date", "ds.asset.order"},
+ *          "normalization_context"={
+ *              "groups"={"asset_output"}
+ *          },
+ *          "denormalization_context"={
+ *              "groups"={"asset_input"}
+ *          }
  *      }
  * )
  * @ORM\Entity(repositoryClass="Ds\Bundle\AssetBundle\Repository\AssetRepository")
@@ -35,7 +40,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints as ORMAssert;
  * @ORM\HasLifecycleCallbacks
  * @ORMAssert\UniqueEntity(fields="uuid")
  */
-class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Identitiable
+class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Identitiable, Versionable
 {
     use Behavior\Translatable\Translatable;
     use Behavior\Timestampable\Timestampable;
@@ -48,6 +53,8 @@ class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Iden
     use Accessor\Identity;
     use Accessor\IdentityUuid;
     use Accessor\Title;
+    use Accessor\Data;
+    use Accessor\Version;
     use EntityAccessor\Associations;
 
     /**
@@ -96,6 +103,7 @@ class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Iden
      * @Serializer\Groups({"asset_output", "asset_input"})
      * @ORM\Column(name="`owner`", type="string", length=255, nullable=true)
      * @Assert\NotBlank
+     * @Assert\Length(min=1, max=255)
      */
     protected $owner;
 
@@ -115,6 +123,7 @@ class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Iden
      * @Serializer\Groups({"asset_output", "asset_input"})
      * @ORM\Column(name="identity", type="string", length=255, nullable=true)
      * @Assert\NotBlank
+     * @Assert\Length(min=1, max=255)
      */
     protected $identity;
 
@@ -134,9 +143,22 @@ class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Iden
      * @Serializer\Groups({"asset_output", "asset_input"})
      * @Assert\Type("array")
      * @Assert\NotBlank
+     * @Assert\All({
+     *     @Assert\NotBlank,
+     *     @Assert\Length(min=1)
+     * })
      * @Translate
      */
     protected $title;
+
+    /**
+     * @var array
+     * @ApiProperty
+     * @Serializer\Groups({"asset_output", "asset_input"})
+     * @ORM\Column(name="data", type="json_array")
+     * @Assert\Type("array")
+     */
+    protected $data;
 
     /**
      * @var \Doctrine\Common\Collections\ArrayCollection
@@ -145,6 +167,17 @@ class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Iden
      * @ORM\OneToMany(targetEntity="Ds\Bundle\AssetBundle\Entity\AssetAssociation", mappedBy="asset", cascade={"persist", "remove"})
      */
     protected $associations;
+
+    /**
+     * @var integer
+     * @ApiProperty
+     * @Serializer\Groups({"asset_output", "asset_input"})
+     * @ORM\Column(name="version", type="integer")
+     * @ORM\Version
+     * @Assert\NotBlank
+     * @Assert\Type("integer")
+     */
+    protected $version;
 
     /**
      * Constructor

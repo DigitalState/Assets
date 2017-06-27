@@ -17,13 +17,17 @@ use Symfony\Bridge\Doctrine\Validator\Constraints as ORMAssert;
  *
  * @ApiResource(
  *      attributes={
- *          "filters"={"ds_asset.filter.asset_association"},
- *          "normalization_context"={"groups"={"association_output"}},
- *          "denormalization_context"={"groups"={"association_input"}}
+ *          "filters"={"ds.asset_association.search", "ds.asset_association.date"},
+ *          "normalization_context"={
+ *              "groups"={"association_output"}
+ *          },
+ *          "denormalization_context"={
+ *              "groups"={"association_input"}
+ *          }
  *      }
  * )
  * @ORM\Entity(repositoryClass="Ds\Bundle\AssetBundle\Repository\AssetAssociationRepository")
- * @ORM\Table(name="ds_asset_association")
+ * @ORM\Table(name="ds_asset_assoc")
  */
 class AssetAssociation extends Association
 {

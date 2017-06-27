@@ -27,7 +27,8 @@ class LoadAssetData extends ResourceFixture implements OrderedFixtureInterface
                 ->setOwnerUuid($asset['owner_uuid'])
                 ->setOwner($asset['identity'])
                 ->setOwnerUuid($asset['identity_uuid'])
-                ->setTitle($asset['title']);
+                ->setTitle($asset['title'])
+                ->setData($asset['data']);
             $manager->persist($entity);
             $manager->flush();
         }
