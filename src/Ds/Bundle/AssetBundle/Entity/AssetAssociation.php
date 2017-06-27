@@ -17,7 +17,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints as ORMAssert;
  *
  * @ApiResource(
  *      attributes={
- *          "filters"={"ds.asset_association.search", "ds.asset_association.date"},
+ *          "filters"={"ds.asset_association.search", "ds.asset_association.date", "ds.asset_association.order"},
  *          "normalization_context"={
  *              "groups"={"association_output"}
  *          },

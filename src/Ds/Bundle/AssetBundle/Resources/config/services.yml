@@ -74,3 +74,16 @@ services:
                 deletedAt: ~
         tags:
             - { name: api_platform.filter, id: ds.asset_association.date }
+
+    ds_asset.filter.asset_association.order:
+        parent: api_platform.doctrine.orm.order_filter
+        arguments:
+            -
+                id: ~
+                createdAt: ~
+                updatedAt: ~
+                deletedAt: ~
+                owner: ~
+                entity: ~
+        tags:
+            - { name: api_platform.filter, id: ds.asset_association.order }
