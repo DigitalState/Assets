@@ -52,7 +52,7 @@ class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Iden
     use Accessor\OwnerUuid;
     use Accessor\Identity;
     use Accessor\IdentityUuid;
-    use Accessor\Title;
+    use Accessor\Translation\Title;
     use Accessor\Data;
     use Accessor\Version;
     use EntityAccessor\Associations;
