@@ -1,0 +1,21 @@
+items:
+    -
+        access: 99704cb8-d71c-460f-aa69-2567042b096f # Any individual
+        entity_uuid: 8454c987-cbc5-4a24-ba1a-d420283caabd # Public
+        key:
+            - asset
+            - asset_uuid
+            - asset_title
+            - asset_data
+            - asset_association
+            - asset_association_uuid
+            - asset_association_entity
+            - asset_association_entity_uuid
+        attributes: [BROWSE, READ]
+
+prototype:
+    access: ~
+    entity: BusinessUnit
+    entity_uuid: ~
+    key: ~
+    attributes: []
