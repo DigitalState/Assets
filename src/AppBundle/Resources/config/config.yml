@@ -12,6 +12,7 @@ ds_security:
         asset_identity:                  { title: app.permissions.asset.identity,                  property: AppBundle\Entity\Asset.identity,     attributes: [BROWSE, READ, EDIT] }
         asset_identity_uuid:             { title: app.permissions.asset.identity_uuid,             property: AppBundle\Entity\Asset.identityUuid, attributes: [BROWSE, READ, EDIT] }
         asset_title:                     { title: app.permissions.asset.title,                     property: AppBundle\Entity\Asset.title,        attributes: [BROWSE, READ, EDIT] }
+        asset_data:                      { title: app.permissions.asset.data,                      property: AppBundle\Entity\Asset.data,         attributes: [BROWSE, READ, EDIT] }
         asset_version:                   { title: app.permissions.asset.version,                   property: AppBundle\Entity\Asset.version,      attributes: [BROWSE, READ, EDIT] }
         asset_association:               { title: app.permissions.asset_association,               entity:   AppBundle\Entity\Asset,              attributes: [BROWSE, READ, EDIT, ADD, DELETE] }
         asset_association_property:      { title: app.permissions.asset_association.property,      property: AppBundle\Entity\Asset.*,            attributes: [BROWSE, READ, EDIT] }
@@ -22,7 +23,7 @@ ds_security:
         asset_association_deleted_at:    { title: app.permissions.asset_association.deleted_at,    property: AppBundle\Entity\Asset.deletedAt,    attributes: [BROWSE, READ, EDIT] }
         asset_association_owner:         { title: app.permissions.asset_association.owner,         property: AppBundle\Entity\Asset.owner,        attributes: [BROWSE, READ, EDIT] }
         asset_association_owner_uuid:    { title: app.permissions.asset_association.owner_uuid,    property: AppBundle\Entity\Asset.ownerUuid,    attributes: [BROWSE, READ, EDIT] }
-        asset_association_asset:        { title: app.permissions.asset_association.asset,        property: AppBundle\Entity\Asset.asset,       attributes: [BROWSE, READ, EDIT] }
+        asset_association_asset:         { title: app.permissions.asset_association.asset,         property: AppBundle\Entity\Asset.asset,        attributes: [BROWSE, READ, EDIT] }
         asset_association_entity:        { title: app.permissions.asset_association.entity,        property: AppBundle\Entity\Asset.identity,     attributes: [BROWSE, READ, EDIT] }
         asset_association_entity_uuid:   { title: app.permissions.asset_association.entity_uuid,   property: AppBundle\Entity\Asset.identityUuid, attributes: [BROWSE, READ, EDIT] }
         asset_association_version:       { title: app.permissions.asset_association.version,       property: AppBundle\Entity\Asset.version,      attributes: [BROWSE, READ, EDIT] }
