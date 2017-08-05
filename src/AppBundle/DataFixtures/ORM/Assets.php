@@ -23,6 +23,6 @@ class Assets extends AssetFixture implements OrderedFixtureInterface
      */
     protected function getResource()
     {
-        return __DIR__.'/../../Resources/data/{server}/assets.yml';
+        return __DIR__.'/../../Resources/data/{env}/assets.yml';
     }
 }
