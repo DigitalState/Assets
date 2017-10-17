@@ -172,7 +172,7 @@ class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Loca
 
     /**
      * @var \Doctrine\Common\Collections\ArrayCollection
-     * @ApiProperty
+     * @ApiProperty(writable=false)
      * @Serializer\Groups({"asset_output"})
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\AssetAssociation", mappedBy="asset", cascade={"persist", "remove"})
      */
