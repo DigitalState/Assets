@@ -1,4 +1,17 @@
-items: []
+items:
+    -
+        access: 2ee6bf35-e14d-4b09-ad1b-e22e83618d72 # Any organization
+        entity_uuid: 8454c987-cbc5-4a24-ba1a-d420283caabd # Public Works
+        key:
+            - asset
+            - asset_uuid
+            - asset_title
+            - asset_data
+            - asset_association
+            - asset_association_uuid
+            - asset_association_entity
+            - asset_association_entity_uuid
+        attributes: [BROWSE, READ]
 
 prototype:
     access: ~
