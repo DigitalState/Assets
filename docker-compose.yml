@@ -20,7 +20,6 @@ services:
         build: .
         depends_on:
             - db
-        command: ['/bin/sh', '${DIRECTORY}/docker/wait-for.sh', 'db:3306', '--', 'docker-app-start']
         environment:
             SYMFONY_ENV: dev
         volumes:
