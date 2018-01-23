@@ -1,0 +1,61 @@
+items:
+    -
+        access: 1a7afd43-2b2f-4e0b-ac43-d7bb52d64f34 # Any Staff
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+        key:
+            - asset
+            - asset_property
+            - asset_association
+            - asset_association_property
+        attributes: [BROWSE, READ]
+
+    -
+        access: f4acf942-6a49-4831-ad1d-8ae6c594849d # Admin
+        entity_uuid: ~ # Any BusinessUnit
+        key: entity
+        attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+
+    -
+        access: f4acf942-6a49-4831-ad1d-8ae6c594849d # Admin
+        entity_uuid: ~ # Any BusinessUnit
+        key: property
+        attributes: [BROWSE, READ, EDIT]
+
+    -
+        access: f4acf942-6a49-4831-ad1d-8ae6c594849d # Admin
+        entity_uuid: ~ # Any BusinessUnit
+        key: custom
+        attributes: [BROWSE, READ, EDIT, ADD, DELETE, EXECUTE]
+
+    -
+        access: 25f77842-ee44-43bd-92c4-45aa21e39bee # Manager
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+        key:
+            - asset
+            - asset_association
+        attributes: [EDIT, ADD, DELETE]
+
+    -
+        access: 25f77842-ee44-43bd-92c4-45aa21e39bee # Manager
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+        key:
+            - asset_property
+            - asset_association_property
+        attributes: [EDIT]
+
+    -
+        access: 211813d6-2e3a-4a11-b2fe-8ba88fb0110f # Agent
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+        key:
+            - asset
+            - asset_property
+            - asset_association
+            - asset_association_property
+        attributes: [EDIT]
+
+prototype:
+    access: ~
+    entity: BusinessUnit
+    entity_uuid: ~
+    key: ~
+    attributes: []

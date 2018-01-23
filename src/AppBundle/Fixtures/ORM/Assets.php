@@ -23,6 +23,6 @@ class Assets extends AssetFixture implements OrderedFixtureInterface
      */
     protected function getResource()
     {
-        return '/srv/api-platform/src/AppBundle/Resources/data/{env}/assets.yml';
+        return '/srv/api-platform/src/AppBundle/Resources/fixtures/{env}/assets.yml';
     }
 }

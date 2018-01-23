@@ -1,7 +1,7 @@
 items:
     -
-        access: 99704cb8-d71c-460f-aa69-2567042b096f # Any individual
-        entity_uuid: 8454c987-cbc5-4a24-ba1a-d420283caabd # Public Works
+        access: 99704cb8-d71c-460f-aa69-2567042b096f # Any Individual
+        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
         key:
             - asset
             - asset_uuid
