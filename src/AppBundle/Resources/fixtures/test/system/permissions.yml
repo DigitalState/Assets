@@ -1,19 +1,19 @@
 items:
     -
-        access: cd203d46-ca6f-43ad-930a-6aadd0b309df # System
-        entity_uuid: ~ # Any business unit
+        access: 90d1424e-39de-4255-a78d-0348b8a89c4d # System
+        entity_uuid: ~ # Any BusinessUnit
         key: entity
         attributes: [BROWSE, READ, EDIT, ADD, DELETE]
 
     -
-        access: cd203d46-ca6f-43ad-930a-6aadd0b309df # System
-        entity_uuid: ~ # Any business unit
+        access: 90d1424e-39de-4255-a78d-0348b8a89c4d # System
+        entity_uuid: ~ # Any BusinessUnit
         key: property
         attributes: [BROWSE, READ, EDIT]
 
     -
-        access: cd203d46-ca6f-43ad-930a-6aadd0b309df # System
-        entity_uuid: ~ # Any business unit
+        access: 90d1424e-39de-4255-a78d-0348b8a89c4d # System
+        entity_uuid: ~ # Any BusinessUnit
         key: custom
         attributes: [BROWSE, READ, EDIT, ADD, DELETE, EXECUTE]
 
