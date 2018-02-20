@@ -1,21 +1,9 @@
-items:
-    -
-        access: 2ee6bf35-e14d-4b09-ad1b-e22e83618d72 # Any Organization
-        entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
-        key:
-            - asset
-            - asset_uuid
-            - asset_title
-            - asset_data
-            - asset_association
-            - asset_association_uuid
-            - asset_association_entity
-            - asset_association_entity_uuid
-        attributes: [BROWSE, READ]
+items: []
 
 prototype:
     access: ~
-    entity: BusinessUnit
+    scope: ~
+    entity: ~
     entity_uuid: ~
     key: ~
     attributes: []

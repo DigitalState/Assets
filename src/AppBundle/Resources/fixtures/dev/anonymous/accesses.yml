@@ -1,11 +1,8 @@
-items:
-    -
-        uuid: e744fc3e-3926-4304-843e-6eebda991bac
-        identity_uuid: ~ # Any Anonymous
+items: []
 
 prototype:
     uuid: ~
     owner: BusinessUnit
     owner_uuid: c11c546e-bd01-47cf-97da-e25388357b5a # Administration
-    identity: Anonymous
-    identity_uuid: ~
+    assignee: Anonymous
+    assignee_uuid: ~
