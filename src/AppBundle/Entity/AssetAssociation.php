@@ -8,6 +8,7 @@ use AppBundle\Entity\Attribute\Accessor;
 use ApiPlatform\Core\Annotation\ApiResource;
 use ApiPlatform\Core\Annotation\ApiProperty;
 use Doctrine\ORM\Mapping as ORM;
+use Ds\Component\Security\Model\Type\Secured;
 use Symfony\Bridge\Doctrine\Validator\Constraints as ORMAssert;
 use Symfony\Component\Serializer\Annotation as Serializer;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -32,7 +33,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Entity(repositoryClass="AppBundle\Repository\AssetAssociationRepository")
  * @ORM\Table(name="app_asset_association")
  */
-class AssetAssociation extends Association
+class AssetAssociation extends Association implements Secured
 {
     use Accessor\Asset;
 
