@@ -1,4 +1,8 @@
 parameters:
+    app: assets
+
+    discovery_host: api.discovery.ds
+
     database_host: assets_db
     database_port: 5432
     database_name: assets
