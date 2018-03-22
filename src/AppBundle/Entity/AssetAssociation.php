@@ -32,6 +32,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * )
  * @ORM\Entity(repositoryClass="AppBundle\Repository\AssetAssociationRepository")
  * @ORM\Table(name="app_asset_association")
+ * @ORM\Cache(usage="NONSTRICT_READ_WRITE")
  */
 class AssetAssociation extends Association implements Secured
 {
@@ -43,6 +44,7 @@ class AssetAssociation extends Association implements Secured
      * @Serializer\Groups({"association_output", "association_input"})
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Asset", inversedBy="associations")
      * @ORM\JoinColumn(name="asset_id", referencedColumnName="id")
+     * @ORM\Cache(usage="NONSTRICT_READ_WRITE")
      * @Assert\Valid
      */
     protected $asset;

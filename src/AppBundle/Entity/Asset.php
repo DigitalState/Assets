@@ -47,6 +47,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * )
  * @ORM\Entity(repositoryClass="AppBundle\Repository\AssetRepository")
  * @ORM\Table(name="app_asset")
+ * @ORM\Cache(usage="NONSTRICT_READ_WRITE")
  * @ORMAssert\UniqueEntity(fields="uuid")
  */
 class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Localizable, Identitiable, Deletable, Versionable, Secured
@@ -176,6 +177,7 @@ class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Loca
      * @ApiProperty(writable=false)
      * @Serializer\Groups({"asset_output"})
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\AssetAssociation", mappedBy="asset", cascade={"persist", "remove"})
+     * @ORM\Cache(usage="NONSTRICT_READ_WRITE")
      */
     protected $associations;
 
