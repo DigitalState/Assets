@@ -16,26 +16,19 @@ abstract class AssetFixture extends ResourceFixture
      */
     public function load(ObjectManager $manager)
     {
-        $assets = $this->parse($this->getResource());
+        $objects = $this->parse($this->getResource());
 
-        foreach ($assets as $asset) {
-            $entity = new Asset;
-            $entity
-                ->setUuid($asset['uuid'])
-                ->setOwner($asset['owner'])
-                ->setOwnerUuid($asset['owner_uuid'])
-                ->setOwner($asset['identity'])
-                ->setOwnerUuid($asset['identity_uuid'])
-                ->setTitle($asset['title']);
-            $manager->persist($entity);
+        foreach ($objects as $object) {
+            $asset = new Asset;
+            $asset
+                ->setUuid($object->uuid)
+                ->setOwner($object->owner)
+                ->setOwnerUuid($object->owner_uuid)
+                ->setOwner($object->identity)
+                ->setOwnerUuid($object->identity_uuid)
+                ->setTitle($object->title);
+            $manager->persist($asset);
             $manager->flush();
         }
     }
-
-    /**
-     * Get resource
-     *
-     * @return string
-     */
-    abstract protected function getResource();
 }
