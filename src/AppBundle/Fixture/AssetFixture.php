@@ -26,7 +26,8 @@ abstract class AssetFixture extends ResourceFixture
                 ->setOwnerUuid($object->owner_uuid)
                 ->setOwner($object->identity)
                 ->setOwnerUuid($object->identity_uuid)
-                ->setTitle($object->title);
+                ->setTitle((array) $object->title)
+                ->setTenant($object->tenant);
             $manager->persist($asset);
             $manager->flush();
         }

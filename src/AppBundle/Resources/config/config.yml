@@ -14,6 +14,7 @@ ds_security:
         asset_title:                   { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Asset.title,        title: app.permissions.asset.title                   }
         asset_data:                    { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Asset.data,         title: app.permissions.asset.data                    }
         asset_version:                 { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Asset.version,      title: app.permissions.asset.version                 }
+        asset_tenant:                  { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Asset.tenant,       title: app.permissions.asset.tenant                  }
         asset_association:             { attributes: [BROWSE, READ, EDIT, ADD, DELETE], entity:   AppBundle\Entity\Asset,              title: app.permissions.asset_association             }
         asset_association_property:    { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Asset.*,            title: app.permissions.asset_association.property    }
         asset_association_id:          { attributes: [BROWSE, READ, EDIT],              property: AppBundle\Entity\Asset.id,           title: app.permissions.asset_association.id          }
