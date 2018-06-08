@@ -20,18 +20,24 @@ fixtures:
   - uuid: a14e8e9c-7f25-4977-8508-0c948ca3d9f2
     owner_uuid: 325e1004-8516-4ca9-a4d3-d7505bd9a7fe # Administration
     key: ds_api.user.roles
-    value: ROLE_SYSTEM
+    value: []
+    tenant: b6ac25fe-3cd6-4100-a054-6bba2fc9ef18 # Tenant 1
+
+  - uuid: 3a59b641-540e-4cfd-a440-d31f2ea5208c
+    owner_uuid: 325e1004-8516-4ca9-a4d3-d7505bd9a7fe # Administration
+    key: ds_api.user.identity.roles
+    value: []
     tenant: b6ac25fe-3cd6-4100-a054-6bba2fc9ef18 # Tenant 1
 
   - uuid: bb6b2e09-3109-4a8e-8a27-296f5f5b53ae
     owner_uuid: 325e1004-8516-4ca9-a4d3-d7505bd9a7fe # Administration
-    key: ds_api.user.identity
+    key: ds_api.user.identity.type
     value: System
     tenant: b6ac25fe-3cd6-4100-a054-6bba2fc9ef18 # Tenant 1
 
   - uuid: 3935e737-3119-4721-8750-a1589674e428
     owner_uuid: 325e1004-8516-4ca9-a4d3-d7505bd9a7fe # Administration
-    key: ds_api.user.identity_uuid
+    key: ds_api.user.identity.uuid
     value: aa18b644-a503-49fa-8f53-10f4c1f8e3a1 # System
     tenant: b6ac25fe-3cd6-4100-a054-6bba2fc9ef18 # Tenant 1
 
@@ -62,18 +68,24 @@ fixtures:
   - uuid: de3d449e-1e92-4eed-b680-6ad349627988
     owner_uuid: 72ecd949-6960-4d9d-8baa-3dc15c2cbd63 # Administration
     key: ds_api.user.roles
-    value: ROLE_SYSTEM
+    value: []
+    tenant: 92000deb-b847-4838-915c-b95d2b28e960 # Tenant 2
+
+  - uuid: 0b83b8f2-2115-470d-afb1-544e7b6240c2
+    owner_uuid: 72ecd949-6960-4d9d-8baa-3dc15c2cbd63 # Administration
+    key: ds_api.user.identity.roles
+    value: []
     tenant: 92000deb-b847-4838-915c-b95d2b28e960 # Tenant 2
 
   - uuid: 04fc124f-838b-4d33-8bd7-119f74abe7c1
     owner_uuid: 72ecd949-6960-4d9d-8baa-3dc15c2cbd63 # Administration
-    key: ds_api.user.identity
+    key: ds_api.user.identity.type
     value: System
     tenant: 92000deb-b847-4838-915c-b95d2b28e960 # Tenant 2
 
   - uuid: 9d5fb403-d6a3-4e44-bfd2-deb5596bc1af
     owner_uuid: 72ecd949-6960-4d9d-8baa-3dc15c2cbd63 # Administration
-    key: ds_api.user.identity_uuid
+    key: ds_api.user.identity.uuid
     value: 571c4b5f-532e-48ac-aa6a-8099d57d9088 # System
     tenant: 92000deb-b847-4838-915c-b95d2b28e960 # Tenant 2
 

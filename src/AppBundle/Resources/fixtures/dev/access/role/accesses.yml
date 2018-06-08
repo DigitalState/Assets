@@ -14,9 +14,6 @@ fixtures:
   - uuid: 74cc57ed-8b17-4ff3-bb64-33911538dd62
     assignee_uuid: 777b96e7-e183-44f7-b7e4-dc0cb7591f74 # Organization
 
-  - uuid: 587ceb21-d9e5-4ed9-9df8-1038406d5807
-    assignee_uuid: d31057f7-066e-4397-8916-38bd39797b6c # Anonymous
-
 prototype:
   uuid: ~
   owner: BusinessUnit
