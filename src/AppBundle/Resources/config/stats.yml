@@ -1,7 +1,7 @@
 services:
-    app.stat.asset.count:
-        class: AppBundle\Stat\Asset\CountStat
-        arguments:
-            - '@app.service.asset'
-        tags:
-            - { name: ds_statistic.stat, alias: asset.count }
+  app.stat.asset.count:
+    class: AppBundle\Stat\Asset\CountStat
+    arguments:
+      - '@app.service.asset'
+    tags:
+      - { name: ds_statistic.stat, alias: asset.count }

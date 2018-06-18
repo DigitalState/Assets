@@ -1,17 +1,31 @@
-tenant:
-  uuid: 2b533711-7884-4e55-93eb-21afb3c7ad28
-
-user:
-  system:
-    uuid: 30765b53-28ed-402b-a5c3-e21e8ab377b3
-    password: ~
-
-identity:
-  system:
-    uuid: 3732b4fb-3796-401c-9ecb-007bc363390a
-  admin:
-    uuid: 4daad9ea-794c-4e88-9bed-db6ae2399e22
-
 business_unit:
-  administration:
-    uuid: 36565c23-ed22-4dc2-bc7e-ae1ce59a727c
+    administration:
+        uuid: e7ba3d1f-2e37-5e0b-88b2-8fb29161dd0f
+    backoffice:
+        uuid: fee1b7c7-858b-54cb-83e7-8f1e047d4d89
+    portal:
+        uuid: 2af2343a-fc6a-5d65-9a05-98318e4d3d11
+config:
+    app.spa.admin:
+        value: http://admin.lab.ds
+    app.spa.portal:
+        value: http://portal.lab.ds
+identity:
+    admin:
+        uuid: bff46203-e9f7-5fea-a343-0e46e1531140
+    system:
+        uuid: 9d95b7a6-178e-504a-af5b-bb84444a4548
+tenant:
+    title:
+        en: Tenant
+    uuid: ab5deca0-0f90-5cfb-b9ac-dfb1578e4eec
+user:
+    admin:
+        password: admin
+        uuid: 809db7c5-7293-55b4-8f14-742a91db7fa2
+    anonymous:
+        password: anonymous
+        uuid: 64b49c7f-5391-531f-a2e8-0c6bb24c91a0
+    system:
+        password: system
+        uuid: 1cceb47d-5562-5ac5-8339-6525ccd1f998

@@ -1,8 +1,8 @@
 services:
-    app.service.asset:
-        class: AppBundle\Service\AssetService
-        parent: ds_entity.service.entity
+  app.service.asset:
+    class: AppBundle\Service\AssetService
+    parent: ds_entity.service.entity
 
-    app.service.asset_association:
-        class: AppBundle\Service\AssetAssociationService
-        parent: ds_entity.service.entity
+  app.service.asset_association:
+    class: AppBundle\Service\AssetAssociationService
+    parent: ds_entity.service.entity
