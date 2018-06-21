@@ -33,7 +33,6 @@ class AppKernel extends Kernel
             new Ds\Component\Api\Bridge\Symfony\Bundle\DsApiBundle,
             new Ds\Component\Cache\Bridge\Symfony\Bundle\DsCacheBundle,
             new Ds\Component\Config\Bridge\Symfony\Bundle\DsConfigBundle,
-            new Ds\Component\Debug\Bridge\Symfony\Bundle\DsDebugBundle,
             new Ds\Component\Discovery\Bridge\Symfony\Bundle\DsDiscoveryBundle,
             new Ds\Component\Entity\Bridge\Symfony\Bundle\DsEntityBundle,
             new Ds\Component\Health\DsHealthBundle,
@@ -60,6 +59,7 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle;
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle;
             $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle;
+            $bundles[] = new Ds\Component\Debug\Bridge\Symfony\Bundle\DsDebugBundle,
             $bundles[] = new Ds\Component\Identity\Bridge\Symfony\TestBundle\DsIdentityTestBundle;
         }
 
