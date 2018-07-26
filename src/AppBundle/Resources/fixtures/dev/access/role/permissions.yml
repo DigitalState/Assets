@@ -25,6 +25,7 @@ fixtures:
     key:
       - asset
       - asset_association
+      - metadata
     attributes: [EDIT, ADD, DELETE]
 
   - access: a55f245e-e2b6-4bd4-baf8-38232d2ce977 # Manager
@@ -34,6 +35,7 @@ fixtures:
     key:
       - asset_property
       - asset_association_property
+      - metadata_property
     attributes: [EDIT]
 
   - access: 569cca0e-cda0-40e3-abf2-fee5d5e6413a # Staff
@@ -45,6 +47,8 @@ fixtures:
       - asset_property
       - asset_association
       - asset_association_property
+      - metadata
+      - metadata_property
     attributes: [BROWSE, READ]
 
   - access: a66549dd-9fa7-491c-8044-06aef2c51e75 # Individual
