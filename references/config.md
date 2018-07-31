@@ -10,3 +10,4 @@ The DigitalState Authentication microservice configurations registry.
 
 | Name | Type | Description | Example |
 | ---- | ---- | ----------- | ------- |
+| - | - | - | - |
