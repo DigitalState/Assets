@@ -27,7 +27,7 @@ GET `/accesses`
 | Name | Type | Description | Example |
 | ---- | ---- | ----------- | ------- |
 | id | integer | Filter access cards by the given id. __Optional.__ | `id=1`<br><br>`id[]=1&id[]=2` |
-| uuid | string | Filter access cards by the given uuid. __Optional.__ | `uuid=d3e8fa50-c802-4dc2-8792-93e80d3fb888`<br><br>`uuid[]=d3e8fa50-c802-4dc2-8792-93e80d3fb888&uuid[]=8e2bca9c-dd33-4c66-9d2f-99b37d39edfe` |
+| uuid | string | Filter access cards by the given uuid. __Optional.__ | `uuid=a55f245e-e2b6-4bd4-baf8-38232d2ce977`<br><br>`uuid[]=a55f245e-e2b6-4bd4-baf8-38232d2ce977&uuid[]=569cca0e-cda0-40e3-abf2-fee5d5e6413a` |
 | owner | string | Filter access cards by the given owner. __Optional.__ | `owner=BusinessUnit`<br><br>`owner[]=BusinessUnit&owner[]=Staff` |
 | ownerUuid | string | Filter access cards by the given owner uuid. __Optional.__ | `ownerUuid=c11c546e-bd01-47cf-97da-e25388357b5a`<br><br>`ownerUuid[]=c11c546e-bd01-47cf-97da-e25388357b5a&ownerUuid[]=a9d68bf7-5000-49fe-8b00-33dde235b327` |
 | assignee | string | Filter access cards by the given assignee. __Optional.__ | `assignee=Staff`<br><br>`assignee[]=Individual&assignee[]=Organization` |
@@ -85,7 +85,7 @@ Accept: application/json
 [
   {
     "id": 1,
-    "uuid": "d3e8fa50-c802-4dc2-8792-93e80d3fb888",
+    "uuid": "a55f245e-e2b6-4bd4-baf8-38232d2ce977",
     "createdAt": "2018-07-31T14:57:10+00:00",
     "updatedAt": "2018-07-31T14:57:10+00:00",
     "owner": "BusinessUnit",
@@ -106,7 +106,7 @@ Accept: application/json
   },
   {
     "id": 2,
-    "uuid": "8e2bca9c-dd33-4c66-9d2f-99b37d39edfe",
+    "uuid": "569cca0e-cda0-40e3-abf2-fee5d5e6413a",
     "createdAt": "2018-07-31T14:57:10+00:00",
     "updatedAt": "2018-07-31T14:57:10+00:00",
     "owner": "BusinessUnit",
@@ -142,7 +142,7 @@ GET `/accesses/{uuid}`
 
 | Name | Type | Description | Example |
 | ---- | ---- | ----------- | ------- |
-| uuid | string | The uuid of the access card. __Required.__ | `d3e8fa50-c802-4dc2-8792-93e80d3fb888` |
+| uuid | string | The uuid of the access card. __Required.__ | `a55f245e-e2b6-4bd4-baf8-38232d2ce977` |
 
 ### Response
 
@@ -174,7 +174,7 @@ The access card with the given uuid does not exist.
 
 *Method:*
 
-__GET__ `/accesses/d3e8fa50-c802-4dc2-8792-93e80d3fb888`
+__GET__ `/accesses/a55f245e-e2b6-4bd4-baf8-38232d2ce977`
 
 *Headers:*
 
@@ -193,7 +193,7 @@ Accept: application/json
 ```json
 {
   "id": 1,
-  "uuid": "d3e8fa50-c802-4dc2-8792-93e80d3fb888",
+  "uuid": "a55f245e-e2b6-4bd4-baf8-38232d2ce977",
   "createdAt": "2018-07-31T14:57:10+00:00",
   "updatedAt": "2018-07-31T14:57:10+00:00",
   "owner": "BusinessUnit",
@@ -343,7 +343,7 @@ PUT `/accesses/{uuid}`
 
 | Name | Type | Description | Example |
 | ---- | ---- | ----------- | ------- |
-| uuid | string | The uuid of the access card. __Required.__ | `d3e8fa50-c802-4dc2-8792-93e80d3fb888` |
+| uuid | string | The uuid of the access card. __Required.__ | `a55f245e-e2b6-4bd4-baf8-38232d2ce977` |
 
 #### Body
 
@@ -351,7 +351,7 @@ A JSON object that contains the following properties:
 
 | Name | Type | Description | Example |
 | ---- | ----- | ----------- | ------- |
-| uuid | string | The access card uuid. __Optional.__ Default: auto-generated. | `d3e8fa50-c802-4dc2-8792-93e80d3fb888` |
+| uuid | string | The access card uuid. __Optional.__ Default: auto-generated. | `a55f245e-e2b6-4bd4-baf8-38232d2ce977` |
 | owner | string | The access card owner. __Required.__ | `BusinessUnit` |
 | ownerUuid | string | The access card owner uuid. __Optional.__ Default: `null`. | `c11c546e-bd01-47cf-97da-e25388357b5a` |
 | assignee | string | The access card assignee. __Required.__ | `BusinessUnit` |
@@ -389,7 +389,7 @@ There were some validation errors.
 
 *Method:*
 
-__PUT__ `/accesses/d3e8fa50-c802-4dc2-8792-93e80d3fb888`
+__PUT__ `/accesses/a55f245e-e2b6-4bd4-baf8-38232d2ce977`
 
 *Headers:*
 
@@ -425,7 +425,7 @@ Accept: application/json
 ```json
 {
   "id": 1,
-  "uuid": "d3e8fa50-c802-4dc2-8792-93e80d3fb888",
+  "uuid": "a55f245e-e2b6-4bd4-baf8-38232d2ce977",
   "createdAt": "2018-07-31T14:57:10+00:00",
   "updatedAt": "2018-08-01T12:30:15+00:00",
   "owner": "BusinessUnit",
@@ -460,7 +460,7 @@ DELETE `/accesses/{uuid}`
 
 | Name | Type | Description | Example |
 | ---- | ---- | ----------- | ------- |
-| uuid | string | The uuid of the access card. __Required.__ | `d3e8fa50-c802-4dc2-8792-93e80d3fb888` |
+| uuid | string | The uuid of the access card. __Required.__ | `a55f245e-e2b6-4bd4-baf8-38232d2ce977` |
 
 ### Response
 
@@ -474,7 +474,7 @@ The request was successful and returns no content.
 
 *Method:*
 
-__DELETE__ `/accesses/d3e8fa50-c802-4dc2-8792-93e80d3fb888`
+__DELETE__ `/accesses/a55f245e-e2b6-4bd4-baf8-38232d2ce977`
 
 #### Response
 
