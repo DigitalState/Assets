@@ -9,5 +9,5 @@ The DigitalState Assets microservice configurations registry.
 ## Configurations
 
 | Name | Type | Description | Example |
-| ---- | ---- | ----------- | ------- |
+| :--- | :--- | :---------- | :------ |
 | - | - | - | - |
