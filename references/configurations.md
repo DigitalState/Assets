@@ -1,6 +1,6 @@
 # Config
 
-The DigitalState Authentication microservice configurations registry.
+The DigitalState Assets microservice configurations registry.
 
 ## Table of Contents
 
