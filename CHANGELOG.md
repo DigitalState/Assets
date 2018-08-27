@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.1
+
+- Bug [Docker] Bump php docker image tag
+
 ## 0.9.0
 
 - Upgrade [Core] Upgrade digitalstate/core dependency to 0.9.0
