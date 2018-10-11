@@ -19,7 +19,6 @@ The DigitalState Assets microservice permissions.
 | `config_owner` | `BROWSE`, `READ`, `EDIT` | Access to Config owner property. |
 | `config_owner_uuid` | `BROWSE`, `READ`, `EDIT` | Access to Config owner uuid property. |
 | `config_key` | `BROWSE`, `READ`, `EDIT` | Access to Config key property. |
-| `config_value` | `BROWSE`, `READ`, `EDIT` | Access to Config value property. |
 | `config_enabled` | `BROWSE`, `READ`, `EDIT` | Access to Config enabled property. |
 | `config_version` | `BROWSE`, `READ`, `EDIT` | Access to Config version property. |
 | `config_tenant` | `BROWSE`, `READ`, `EDIT` | Access to Config id property. |
