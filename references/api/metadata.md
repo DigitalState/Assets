@@ -20,6 +20,13 @@ This endpoint returns the list of metadata resources.
 
 GET `/metadatas`
 
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
+
 ### Parameters
 
 #### Query Parameters
@@ -123,6 +130,13 @@ This endpoint returns a specific metadata resource.
 
 GET `/metadatas/{uuid}`
 
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
+
 ### Parameters
 
 #### Path Parameters
@@ -214,6 +228,14 @@ This endpoint adds an metadata resource to the list.
 ### Method
 
 POST `/metadatas`
+
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Content-Type | string | The accepted returned content types. Options: `application/json`. | `Content-Type: application/json` |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
 
 ### Parameters
 
@@ -336,6 +358,14 @@ This endpoint edits a specific metadata resource.
 
 PUT `/metadatas/{uuid}`
 
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Content-Type | string | The accepted returned content types. Options: `application/json`. | `Content-Type: application/json` |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
+
 ### Parameters
 
 #### Path Parameters
@@ -457,6 +487,12 @@ This endpoint deletes a specific metadata resource from the list.
 ### Method
 
 DELETE `/metadatas/{uuid}`
+
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
 
 ### Parameters
 
