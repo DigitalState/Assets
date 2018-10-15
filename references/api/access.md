@@ -20,6 +20,12 @@ This endpoint returns the list of access cards.
 
 GET `/accesses`
 
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Authorization | string | The JWT token. __Required.__ | `eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xF[...].Ds34hb80MfOZfViFx0wI[...]` |
+
 ### Parameters
 
 #### Query Parameters
