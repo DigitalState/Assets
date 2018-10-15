@@ -24,7 +24,7 @@ GET `/accesses`
 
 | Name | Type | Description | Example |
 | :--- | :--- | :---------- | :------ |
-| Accept | string | The accepted returned content types. __Optional.__ Options: `application/json`, `application/ld+json`. Default: `application/ld+json` | `Accept: application/json` |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
 | Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
 
 ### Parameters
