@@ -20,6 +20,13 @@ This endpoint returns the list of tenants.
 
 GET `/system/tenants`
 
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The basic auth credentials. __Required.__ | `Authorization: Basic c3lzdGVtOnN5c3RlbQ==` |
+
 ### Parameters
 
 #### Query Parameters
@@ -89,6 +96,13 @@ Accept: application/json
 
 This endpoint returns a specific tenant.
 
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The basic auth credentials. __Required.__ | `Authorization: Basic c3lzdGVtOnN5c3RlbQ==` |
+
 ### Method
 
 GET `/system/tenants/{uuid}`
@@ -156,6 +170,14 @@ Accept: application/json
 ## Add Item
 
 This endpoint adds a tenant to the list.
+
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Content-Type | string | The accepted returned content types. Options: `application/json`. | `Content-Type: application/json` |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The basic auth credentials. __Required.__ | `Authorization: Basic c3lzdGVtOnN5c3RlbQ==` |
 
 ### Method
 
@@ -241,6 +263,14 @@ This endpoint edits a specific tenant.
 ### Method
 
 PUT `/system/tenants/{uuid}`
+
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Content-Type | string | The accepted returned content types. Options: `application/json`. | `Content-Type: application/json` |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The basic auth credentials. __Required.__ | `Authorization: Basic c3lzdGVtOnN5c3RlbQ==` |
 
 ### Parameters
 
@@ -328,6 +358,12 @@ This endpoint deletes a specific tenant from the list.
 ### Method
 
 DELETE `/system/tenants/{uuid}`
+
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Authorization | string | The basic auth credentials. __Required.__ | `Authorization: Basic c3lzdGVtOnN5c3RlbQ==` |
 
 ### Parameters
 
