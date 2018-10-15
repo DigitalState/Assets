@@ -323,7 +323,7 @@ Accept: application/json
   "owner": "BusinessUnit",
   "ownerUuid": "5f4108bb-fa74-4c93-9bb1-9e37d9302640",
   "assignee": "Staff",
-  "assigneeUuid": "c8c17ac2-3c41-491d-888c-459f13b97d3c"",
+  "assigneeUuid": "c8c17ac2-3c41-491d-888c-459f13b97d3c",
   "permissions": [
     {
       "scope": "owner",
@@ -354,7 +354,7 @@ Accept: application/json
   "owner": "BusinessUnit",
   "ownerUuid": "5f4108bb-fa74-4c93-9bb1-9e37d9302640",
   "assignee": "Staff",
-  "assigneeUuid": "c8c17ac2-3c41-491d-888c-459f13b97d3c"",
+  "assigneeUuid": "c8c17ac2-3c41-491d-888c-459f13b97d3c",
   "permissions": [
     {
       "scope": "owner",
@@ -491,7 +491,7 @@ Accept: application/json
     {
       "scope": "owner",
       "entity": "BusinessUnit",
-      "entityUuid": "5f4108bb-fa74-4c93-9bb1-9e37d9302640"",
+      "entityUuid": "5f4108bb-fa74-4c93-9bb1-9e37d9302640",
       "key": "config",
       "attributes": ["BROWSE", "READ"]
     }
