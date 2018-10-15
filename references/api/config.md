@@ -18,6 +18,13 @@ This endpoint returns the list of configurations.
 
 GET `/configs`
 
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
+
 ### Parameters
 
 #### Query Parameters
@@ -123,6 +130,13 @@ This endpoint returns a specific configuration.
 
 GET `/configs/{uuid}`
 
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
+
 ### Parameters
 
 #### Path Parameters
@@ -206,6 +220,14 @@ This endpoint edits a specific configuration.
 ### Method
 
 PUT `/configs/{uuid}`
+
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Content-Type | string | The accepted returned content types. Options: `application/json`. | `Content-Type: application/json` |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
 
 ### Parameters
 
