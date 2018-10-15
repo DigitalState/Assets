@@ -148,6 +148,13 @@ This endpoint returns a specific access card.
 
 GET `/accesses/{uuid}`
 
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
+
 ### Parameters
 
 #### Path Parameters
@@ -239,6 +246,14 @@ This endpoint adds an access card to the list.
 ### Method
 
 POST `/accesses`
+
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Content-Type | string | The accepted returned content types. Options: `application/json`. | `Content-Type: application/json` |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
 
 ### Parameters
 
@@ -361,6 +376,14 @@ This endpoint edits a specific access card.
 ### Method
 
 PUT `/accesses/{uuid}`
+
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Content-Type | string | The accepted returned content types. Options: `application/json`. | `Content-Type: application/json` |
+| Accept | string | The accepted returned content types. __Optional.__ Default: `application/ld+json`. Options: `application/json`, `application/ld+json`. | `Accept: application/json` |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
 
 ### Parameters
 
@@ -485,6 +508,12 @@ This endpoint deletes a specific access card from the list.
 ### Method
 
 DELETE `/accesses/{uuid}`
+
+### Headers
+
+| Name | Type | Description | Example |
+| :--- | :--- | :---------- | :------ |
+| Authorization | string | The JWT token. __Required.__ | `Authorization: eyJhbGciOi.eyJyb2xlcy[...].Ds34hb80Mf[...]` |
 
 ### Parameters
 
