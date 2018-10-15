@@ -16,7 +16,7 @@ For more information about the architecture and core concepts of access cards, y
 
 This endpoint returns the list of access cards.
 
-:lock: This endpoint is JWT protected.
+[:lock:]("This endpoint is JWT protected.")
 
 ### Method
 
