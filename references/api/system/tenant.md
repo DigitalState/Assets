@@ -225,6 +225,7 @@ __POST__ `/system/tenants`
 *Headers:*
 
 ```yaml
+Content-Type: application/json
 Accept: application/json
 ```
 
@@ -320,6 +321,7 @@ __PUT__ `/system/tenants/d928b020-94f6-4928-a510-04fc49d5a174`
 *Headers:*
 
 ```yaml
+Content-Type: application/json
 Accept: application/json
 ```
 
