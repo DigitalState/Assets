@@ -313,6 +313,7 @@ __POST__ `/accesses`
 *Headers:*
 
 ```yaml
+Content-Type: application/json
 Accept: application/json
 ```
 
@@ -449,6 +450,7 @@ __PUT__ `/accesses/dc719883-c593-42e5-8aee-5d9367525273`
 *Headers:*
 
 ```yaml
+Content-Type: application/json
 Accept: application/json
 ```
 

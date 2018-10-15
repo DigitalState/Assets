@@ -293,6 +293,7 @@ __PUT__ `/configs/1f0a13f5-7705-4b2d-b454-aa4d9ddb9c77`
 *Headers:*
 
 ```yaml
+Content-Type: application/json
 Accept: application/json
 ```
 

@@ -296,6 +296,7 @@ __POST__ `/metadatas`
 *Headers:*
 
 ```yaml
+Content-Type: application/json
 Accept: application/json
 ```
 
@@ -431,6 +432,7 @@ __PUT__ `/metadatas/941b9d4e-d0e5-41df-a62e-97db05559dac`
 *Headers:*
 
 ```yaml
+Content-Type: application/json
 Accept: application/json
 ```
 
@@ -527,4 +529,3 @@ __DELETE__ `/metadatas/941b9d4e-d0e5-41df-a62e-97db05559dac`
 ```
 
 ```
-
