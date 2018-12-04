@@ -1,0 +1,23 @@
+objects:
+  - uuid: e983c879-dad4-46a7-a54b-5eda30511395
+    assignee_uuid: 5ab54dd5-56ed-4e96-bd8b-1d60ab668a75 # Administrator
+
+  - uuid: 73b97ee6-8132-42bf-b59d-45bb5863ef7a
+    assignee_uuid: f06dd49d-8ad4-437a-beee-387b834ee217 # Manager
+
+  - uuid: 441b8473-f4ec-443f-aa32-0474c9d37185
+    assignee_uuid: 3e64bbd1-4d00-47e7-a35e-92691f5a6018 # Staff
+
+  - uuid: e35908e9-4547-4d87-a9cf-be10ffdd5ea6
+    assignee_uuid: 54d82fc6-8ce7-498e-832f-3598664a9d9d # Individual
+
+  - uuid: d2ec7603-7acd-4b1e-9e04-f5799205ed5e
+    assignee_uuid: 777b96e7-e183-44f7-b7e4-dc0cb7591f74 # Organization
+
+prototype:
+  uuid: ~
+  owner: BusinessUnit
+  owner_uuid: c11c546e-bd01-47cf-97da-e25388357b5a # Administration
+  assignee: Role
+  assignee_uuid: ~
+  tenant: e5a2120d-6bf7-4c58-a900-bac1e55e986b # Tenant 1

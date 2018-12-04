@@ -1,6 +1,6 @@
 # Assets
 
-Description...
+The DigitalState Assets Microservice
 
 [![Build Status](https://travis-ci.org/DigitalState/Assets.svg?branch=develop)](https://travis-ci.org/DigitalState/Assets)
 [![Coverage Status](https://coveralls.io/repos/github/DigitalState/Assets/badge.svg?branch=develop)](https://coveralls.io/github/DigitalState/Assets?branch=develop)
@@ -20,10 +20,10 @@ Further documentation can be found in the [Documentation Repository](https://git
 
 ## References
 
-- [Api](references/api.md)
-- [Configurations](references/configurations.md)
-- [Permissions](references/permissions.md)
-- [Docker](references/docker.md)
+- [Api](reference/api.md)
+- [Configurations](reference/configurations.md)
+- [Permissions](reference/permissions.md)
+- [Docker](reference/docker.md)
 
 ## Contributing
 

@@ -1,0 +1,91 @@
+objects:
+  - access: e983c879-dad4-46a7-a54b-5eda30511395 # Administrator
+    scope: owner
+    entity: BusinessUnit
+    entity_uuid: ~ # Any BusinessUnit
+    key: entity
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE]
+
+  - access: e983c879-dad4-46a7-a54b-5eda30511395 # Administrator
+    scope: owner
+    entity: BusinessUnit
+    entity_uuid: ~ # Any BusinessUnit
+    key: property
+    attributes: [BROWSE, READ, EDIT]
+
+  - access: e983c879-dad4-46a7-a54b-5eda30511395 # Administrator
+    scope: generic
+    key: generic
+    attributes: [BROWSE, READ, EDIT, ADD, DELETE, EXECUTE]
+
+  - access: 73b97ee6-8132-42bf-b59d-45bb5863ef7a # Manager
+    scope: owner
+    entity: BusinessUnit
+    entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+    key:
+      - record
+      - record_association
+      - metadata
+    attributes: [EDIT, ADD, DELETE]
+
+  - access: 73b97ee6-8132-42bf-b59d-45bb5863ef7a # Manager
+    scope: owner
+    entity: BusinessUnit
+    entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+    key:
+      - record_property
+      - record_association_property
+      - metadata_property
+    attributes: [EDIT]
+
+  - access: 441b8473-f4ec-443f-aa32-0474c9d37185 # Staff
+    scope: owner
+    entity: BusinessUnit
+    entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
+    key:
+      - record
+      - record_property
+      - record_association
+      - record_association_property
+      - metadata
+      - metadata_property
+    attributes: [BROWSE, READ]
+
+  - access: e35908e9-4547-4d87-a9cf-be10ffdd5ea6 # Individual
+    scope: session
+    entity: ~
+    entity_uuid: ~
+    key:
+      - record
+      - record_uuid
+      - record_title
+      - record_data
+      - record_association
+      - record_association_uuid
+      - record_association_entity
+      - record_association_entity_uuid
+    attributes: [BROWSE, READ]
+
+  - access: d2ec7603-7acd-4b1e-9e04-f5799205ed5e # Organization
+    scope: session
+    entity: ~
+    entity_uuid: ~
+    key:
+      - record
+      - record_uuid
+      - record_title
+      - record_data
+      - record_association
+      - record_association_uuid
+      - record_association_entity
+      - record_association_entity_uuid
+    attributes: [BROWSE, READ]
+
+prototype:
+  access: ~
+  scope: ~
+  entity: ~
+  entity_uuid: ~
+  key: ~
+  attributes: []
+  tenant: e5a2120d-6bf7-4c58-a900-bac1e55e986b # Tenant 1
