@@ -8,12 +8,42 @@ services:
     public: false
 
   App\:
-    resource: ../src/{Fixtures}
+    resource: ../src/{Controller,Fixture,Repository,Service,Stat,Tenant}
 
   App\Controller\:
     resource: ../src/Controller
     tags: [controller.service_arguments]
 
-  App\Fixtures\:
-    resource: ../src/Fixtures
+  App\Fixture\:
+    resource: ../src/Fixture
     tags: [doctrine.fixture.orm]
+
+  App\Repository\AssetRepository:
+    factory: ['@doctrine.orm.default_entity_manager', getRepository]
+    arguments:
+      - App\Entity\Asset
+
+  App\Repository\AssetAssociationRepository:
+    factory: ['@doctrine.orm.default_entity_manager', getRepository]
+    arguments:
+      - App\Entity\AssetAssociation
+
+  AppBundle\Stat\Asset\CountStat:
+    tags:
+      - { name: ds_statistic.stat, alias: asset.count }
+
+  App\Tenant\Loader\AccessLoader:
+    tags:
+      - { name: ds_tenant.loader }
+
+  App\Tenant\Loader\ConfigLoader:
+    tags:
+      - { name: ds_tenant.loader }
+
+  App\Tenant\Unloader\AssetUnloader:
+    tags:
+      - { name: ds_tenant.unloader }
+
+  App\Tenant\Unloader\AssetAssociationUnloader:
+    tags:
+      - { name: ds_tenant.unloader, priority: -1 }

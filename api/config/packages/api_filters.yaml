@@ -1,0 +1,73 @@
+services:
+  app.filter.asset.search:
+    parent: api_platform.doctrine.orm.search_filter
+    arguments:
+      - id: exact
+        uuid: exact
+        owner: exact
+        ownerUuid: exact
+        identity: exact
+        identityUuid: exact
+    tags:
+      - { name: api_platform.filter, id: app.asset.search }
+
+  app.filter.asset.search_translation:
+    parent: ds_translation.doctrine.orm.filter.search
+    arguments:
+      - title: partial
+    tags:
+      - { name: api_platform.filter, id: app.asset.search_translation }
+
+  app.filter.asset.date:
+    parent: api_platform.doctrine.orm.date_filter
+    arguments:
+      - createdAt: ~
+        updatedAt: ~
+        deletedAt: ~
+    tags:
+      - { name: api_platform.filter, id: app.asset.date }
+
+  app.filter.asset.order:
+    parent: api_platform.doctrine.orm.order_filter
+    arguments:
+      - id: ~
+        createdAt: ~
+        updatedAt: ~
+        deletedAt: ~
+        owner: ~
+        identity: ~
+    tags:
+      - { name: api_platform.filter, id: app.asset.order }
+
+  app.filter.asset_association.search:
+    parent: api_platform.doctrine.orm.search_filter
+    arguments:
+      - id: exact
+        uuid: exact
+        owner: exact
+        ownerUuid: exact
+        entity: exact
+        entityUuid: exact
+    tags:
+      - { name: api_platform.filter, id: app.asset_association.search }
+
+  app.filter.asset_association.date:
+    parent: api_platform.doctrine.orm.date_filter
+    arguments:
+      - createdAt: ~
+        updatedAt: ~
+        deletedAt: ~
+    tags:
+      - { name: api_platform.filter, id: app.asset_association.date }
+
+  app.filter.asset_association.order:
+    parent: api_platform.doctrine.orm.order_filter
+    arguments:
+      - id: ~
+        createdAt: ~
+        updatedAt: ~
+        deletedAt: ~
+        owner: ~
+        entity: ~
+    tags:
+      - { name: api_platform.filter, id: app.asset_association.order }
