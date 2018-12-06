@@ -23,8 +23,8 @@ objects:
     entity: BusinessUnit
     entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
     key:
-      - record
-      - record_association
+      - asset
+      - asset_association
       - metadata
     attributes: [EDIT, ADD, DELETE]
 
@@ -33,8 +33,8 @@ objects:
     entity: BusinessUnit
     entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
     key:
-      - record_property
-      - record_association_property
+      - asset_property
+      - asset_association_property
       - metadata_property
     attributes: [EDIT]
 
@@ -43,10 +43,10 @@ objects:
     entity: BusinessUnit
     entity_uuid: a9d68bf7-5000-49fe-8b00-33dde235b327 # Backoffice
     key:
-      - record
-      - record_property
-      - record_association
-      - record_association_property
+      - asset
+      - asset_property
+      - asset_association
+      - asset_association_property
       - metadata
       - metadata_property
     attributes: [BROWSE, READ]
@@ -56,14 +56,14 @@ objects:
     entity: ~
     entity_uuid: ~
     key:
-      - record
-      - record_uuid
-      - record_title
-      - record_data
-      - record_association
-      - record_association_uuid
-      - record_association_entity
-      - record_association_entity_uuid
+      - asset
+      - asset_uuid
+      - asset_title
+      - asset_data
+      - asset_association
+      - asset_association_uuid
+      - asset_association_entity
+      - asset_association_entity_uuid
     attributes: [BROWSE, READ]
 
   - access: d2ec7603-7acd-4b1e-9e04-f5799205ed5e # Organization
@@ -71,14 +71,14 @@ objects:
     entity: ~
     entity_uuid: ~
     key:
-      - record
-      - record_uuid
-      - record_title
-      - record_data
-      - record_association
-      - record_association_uuid
-      - record_association_entity
-      - record_association_entity_uuid
+      - asset
+      - asset_uuid
+      - asset_title
+      - asset_data
+      - asset_association
+      - asset_association_uuid
+      - asset_association_entity
+      - asset_association_entity_uuid
     attributes: [BROWSE, READ]
 
 prototype:
