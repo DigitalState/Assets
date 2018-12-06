@@ -19,7 +19,7 @@ final class AssetFixture implements FixtureInterface, OrderedFixtureInterface, C
      */
     public function __construct()
     {
-        $this->path = '/srv/api/config/fixtures/{fixtures}/assets.yml';
+        $this->path = '/srv/api/config/fixtures/{fixtures}/assets.yaml';
     }
 
     /**
