@@ -1,17 +1,17 @@
 objects:
-  - uuid: e983c879-dad4-46a7-a54b-5eda30511395
+  - uuid: 9b5e8f50-f153-4b00-b0a9-d9f24c09e0af
     assignee_uuid: 5ab54dd5-56ed-4e96-bd8b-1d60ab668a75 # Administrator
 
-  - uuid: 73b97ee6-8132-42bf-b59d-45bb5863ef7a
+  - uuid: a55f245e-e2b6-4bd4-baf8-38232d2ce977
     assignee_uuid: f06dd49d-8ad4-437a-beee-387b834ee217 # Manager
 
-  - uuid: 441b8473-f4ec-443f-aa32-0474c9d37185
+  - uuid: 569cca0e-cda0-40e3-abf2-fee5d5e6413a
     assignee_uuid: 3e64bbd1-4d00-47e7-a35e-92691f5a6018 # Staff
 
-  - uuid: e35908e9-4547-4d87-a9cf-be10ffdd5ea6
+  - uuid: a66549dd-9fa7-491c-8044-06aef2c51e75
     assignee_uuid: 54d82fc6-8ce7-498e-832f-3598664a9d9d # Individual
 
-  - uuid: d2ec7603-7acd-4b1e-9e04-f5799205ed5e
+  - uuid: 74cc57ed-8b17-4ff3-bb64-33911538dd62
     assignee_uuid: 777b96e7-e183-44f7-b7e4-dc0cb7591f74 # Organization
 
 prototype:
