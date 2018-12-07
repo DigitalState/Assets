@@ -2,7 +2,6 @@
 
 namespace App\Fixture;
 
-use App\Fixture\Asset;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
