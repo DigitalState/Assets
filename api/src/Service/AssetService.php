@@ -17,7 +17,7 @@ final class AssetService extends EntityService
      * @param \Doctrine\ORM\EntityManager $manager
      * @param string $entity
      */
-    public function __construct(EntityManager $manager, $entity = Asset::class)
+    public function __construct(EntityManager $manager, string $entity = Asset::class)
     {
         parent::__construct($manager, $entity);
     }
