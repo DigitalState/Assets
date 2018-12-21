@@ -28,7 +28,7 @@ services:
     arguments:
       - App\Entity\AssetAssociation
 
-  AppBundle\Stat\Asset\CountStat:
+  App\Stat\Asset\CountStat:
     tags:
       - { name: ds_statistic.stat, alias: asset.count }
 
