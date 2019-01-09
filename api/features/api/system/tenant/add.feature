@@ -76,10 +76,6 @@ Feature: Add tenant
     And the JSON node "uuid" should be equal to "3b0f1019-e9b6-458d-b9ad-fd60c079ee7b"
     And the JSON node "createdAt" should exist
     And the JSON node "updatedAt" should exist
-    And the JSON node "data" should exist
-    And the JSON node "data.user" should exist
-    And the JSON node "data.user.system" should exist
-    And the JSON node "data.user.system.uuid" should be equal to "5cc6ed87-7fa0-4f49-b14c-85ff44078858"
     And the JSON node "version" should exist
     And the JSON node "version" should be equal to the number 1
 
