@@ -82,8 +82,6 @@ Feature: Add tenant
     And the JSON node "data.user.system.uuid" should be equal to "5cc6ed87-7fa0-4f49-b14c-85ff44078858"
     And the JSON node "version" should exist
     And the JSON node "version" should be equal to the number 1
-    And the JSON node "tenant" should exist
-    And the JSON node "tenant" should be equal to "b6ac25fe-3cd6-4100-a054-6bba2fc9ef18"
 
   @downMigrations
   Scenario: Read the added tenant
