@@ -53,14 +53,8 @@ Feature: Add tenant
               "app.spa.admin": {
                   "value": "http://admin.ds"
               },
-              "app.spa.admin.oauth": {
-                  "value": "http://admin.ds/oauth"
-              },
               "app.spa.portal": {
                   "value": "http://portal.ds"
-              },
-              "app.spa.portal.oauth": {
-                  "value": "http://portal.ds/oauth"
               }
           }
       },
