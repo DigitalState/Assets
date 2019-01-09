@@ -1,7 +1,7 @@
 @api @system @tenant @add
 Feature: Add tenant
   In order to add tenants
-  As a system user
+  As the system user
   I should be able to send api requests related to tenants
 
   Background:
