@@ -1,5 +1,5 @@
-@api @security @firewall @deny
-Feature: Deny access to non-authenticated users to protected endpoints
+@api @security @firewall @access @deny
+Feature: Deny access to non-authenticated users to access endpoints
 
   @upMigrations @loadFixtures
   Scenario: Browse accesses
