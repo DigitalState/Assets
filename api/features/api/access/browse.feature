@@ -12,7 +12,66 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 9, "maxItems": 9 }
+    {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "uuid": {
+            "type": "string",
+            "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "ownerUuid": {
+            "type": "string",
+            "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+          },
+          "assignee": {
+            "type": "string"
+          },
+          "assigneeUuid": {
+            "type": ["string", "null"],
+            "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+          },
+          "permissions": {
+            "type": "array"
+          },
+          "version": {
+            "type": "integer"
+          },
+          "tenant": {
+            "type": "string",
+            "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "uuid",
+        "createdAt",
+        "updatedAt",
+        "owner",
+        "ownerUuid",
+        "assignee",
+        "assigneeUuid",
+        "permissions",
+        "version",
+        "tenant"
+      ]
+    }
     """
 
   Scenario: Browse paginated accesses
@@ -23,7 +82,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 1, "maxItems": 1 }
+    {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1
+    }
     """
 
   Scenario: Browse accesses with a specific id
@@ -34,7 +97,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 1, "maxItems": 1 }
+    {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1
+    }
     """
 
   Scenario: Browse accesses with specific ids
@@ -45,7 +112,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 2, "maxItems": 2 }
+    {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2
+    }
     """
 
   Scenario: Browse accesses with a specific uuid
@@ -56,7 +127,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 1, "maxItems": 1 }
+    {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1
+    }
     """
 
   Scenario: Browse accesses with specific uuids
@@ -67,7 +142,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 2, "maxItems": 2 }
+    {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2
+    }
     """
 
   Scenario: Browse accesses with a specific owner
@@ -78,7 +157,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 8, "maxItems": 8 }
+    {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8
+    }
     """
 
   Scenario: Browse accesses with specific owners
@@ -89,7 +172,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 9, "maxItems": 9 }
+    {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9
+    }
     """
 
   Scenario: Browse accesses with a specific owner uuid
@@ -100,7 +187,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 8, "maxItems": 8 }
+    {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8
+    }
     """
 
   Scenario: Browse accesses with specific owner uuids
@@ -111,7 +202,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 9, "maxItems": 9 }
+    {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9
+    }
     """
 
   Scenario: Browse accesses with a specific assignee
@@ -122,7 +217,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 2, "maxItems": 2 }
+    {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2
+    }
     """
 
   Scenario: Browse accesses with specific assignees
@@ -133,7 +232,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 4, "maxItems": 4 }
+    {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4
+    }
     """
 
   Scenario: Browse accesses with a specific assignee uuid
@@ -144,7 +247,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 1, "maxItems": 1 }
+    {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1
+    }
     """
 
   Scenario: Browse accesses with specific assignee uuids
@@ -155,7 +262,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 2, "maxItems": 2 }
+    {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2
+    }
     """
 
   Scenario: Browse accesses with a specific before created date
@@ -166,7 +277,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 9, "maxItems": 9 }
+    {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9
+    }
     """
 
   Scenario: Browse accesses with a specific after created date
@@ -177,7 +292,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 9, "maxItems": 9 }
+    {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9
+    }
     """
 
   Scenario: Browse accesses with a specific before updated date
@@ -188,7 +307,11 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 9, "maxItems": 9 }
+    {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9
+    }
     """
 
   Scenario: Browse accesses with a specific after updated date
@@ -199,5 +322,9 @@ Feature: Browse accesses
     And the response should be in JSON
     And the JSON should be valid according to this schema:
     """
-    { "type": "array", "minItems": 9, "maxItems": 9 }
+    {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9
+    }
     """
