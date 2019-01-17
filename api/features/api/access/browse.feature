@@ -4,7 +4,6 @@ Feature: Browse accesses
   Background:
     Given I am authenticated as the "system@system.ds" user from the tenant "b6ac25fe-3cd6-4100-a054-6bba2fc9ef18"
 
-  @upMigrations @loadFixtures
   Scenario: Browse all accesses
     When I add "Accept" header equal to "application/json"
     And I send a "GET" request to "/accesses"
@@ -192,7 +191,6 @@ Feature: Browse accesses
     { "type": "array", "minItems": 9, "maxItems": 9 }
     """
 
-  @downMigrations
   Scenario: Browse accesses with a specific after updated date
     When I add "Accept" header equal to "application/json"
     And I send a "GET" request to "/accesses?updatedAt[after]=2000-01-01"
