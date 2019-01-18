@@ -71,7 +71,15 @@ Feature: Add tenant
 
   Scenario: Read the added tenant
     When I add "Accept" header equal to "application/json"
-    And I send a "GET" request to "/system/tenants/3b0f1019-e9b6-458d-b9ad-fd60c079ee7b"
+    And I send a "GET" request to "/system/tenants?id=3"
     Then the response status code should be 200
     And the header "Content-Type" should be equal to "application/json; charset=utf-8"
     And the response should be in JSON
+    And the JSON should be valid according to this schema:
+    """
+    {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1
+    }
+    """
