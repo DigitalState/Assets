@@ -25,7 +25,6 @@ Feature: Edit assets
     And the header "Content-Type" should be equal to "application/json; charset=utf-8"
     And the response should be in JSON
     And the JSON node "title.en" should be equal to "Animal License - edit"
-    And the JSON node "title.fr" should exist
     And the JSON node "title.fr" should be equal to "Permis animalier - edit"
     And the JSON node "data.id" should be equal to "2"
     And the JSON node "data.type" should be equal to "dog - edit"
@@ -38,7 +37,6 @@ Feature: Edit assets
     And the header "Content-Type" should be equal to "application/json; charset=utf-8"
     And the response should be in JSON
     And the JSON node "title.en" should be equal to "Animal License - edit"
-    And the JSON node "title.fr" should exist
     And the JSON node "title.fr" should be equal to "Permis animalier - edit"
     And the JSON node "data.id" should be equal to "2"
     And the JSON node "data.type" should be equal to "dog - edit"
