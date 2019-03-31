@@ -15,10 +15,7 @@ services:
           - assets_database
 
   php:
-    image: digitalstate/assets-php
-    build:
-      context: ./api
-      target: api_platform_php
+    image: digitalstate/assets:php-0.16.0
     depends_on:
       - database
     env_file:
@@ -44,10 +41,7 @@ services:
           - assets_php
 
   api:
-    image: digitalstate/assets-api
-    build:
-      context: ./api
-      target: api_platform_nginx
+    image: digitalstate/assets:api-0.16.0
     depends_on:
       - php
     networks:
