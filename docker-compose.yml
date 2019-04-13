@@ -15,7 +15,7 @@ services:
           - assets_database
 
   php:
-    image: digitalstate/assets:php-0.16.0
+    image: digitalstate/assets:php-0.16.1
     depends_on:
       - database
     env_file:
@@ -41,7 +41,7 @@ services:
           - assets_php
 
   api:
-    image: digitalstate/assets:api-0.16.0
+    image: digitalstate/assets:api-0.16.1
     depends_on:
       - php
     networks:
