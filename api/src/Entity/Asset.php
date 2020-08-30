@@ -91,8 +91,9 @@ class Asset implements Identifiable, Uuidentifiable, Ownable, Translatable, Loca
 
     /**
      * @var \DateTime
-     * @ApiProperty(writable=false)
+     * @ApiProperty
      * @Serializer\Groups({"asset_output"})
+     * @Assert\DateTime
      */
     protected $createdAt;
 
