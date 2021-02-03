@@ -10,6 +10,7 @@ Feature: Edit assets
     And I send a "PUT" request to "/assets/03012aa6-e87d-45df-8715-c2f49dbca460" with body:
     """
     {
+      "createdAt": "2000-01-01 12:00:00",
       "title": {
         "en": "Animal License - edit",
         "fr": "Permis animalier - edit"
@@ -24,6 +25,7 @@ Feature: Edit assets
     Then the response status code should be 200
     And the header "Content-Type" should be equal to "application/json; charset=utf-8"
     And the response should be in JSON
+    And the JSON node "createdAt" should be equal to the string "2000-01-01T12:00:00+00:00"
     And the JSON node "title.en" should be equal to "Animal License - edit"
     And the JSON node "title.fr" should be equal to "Permis animalier - edit"
     And the JSON node "data.id" should be equal to "2"
@@ -36,6 +38,7 @@ Feature: Edit assets
     Then the response status code should be 200
     And the header "Content-Type" should be equal to "application/json; charset=utf-8"
     And the response should be in JSON
+    And the JSON node "createdAt" should be equal to the string "2000-01-01T12:00:00+00:00"
     And the JSON node "title.en" should be equal to "Animal License - edit"
     And the JSON node "title.fr" should be equal to "Permis animalier - edit"
     And the JSON node "data.id" should be equal to "2"
@@ -50,7 +53,6 @@ Feature: Edit assets
     {
       "id": 9999,
       "uuid": "023ef9b1-64e5-48cb-b367-6a4d09ad3161",
-      "createdAt":"2000-01-01T12:00:00+00:00",
       "updatedAt":"2000-01-01T12:00:00+00:00",
       "deletedAt":"2000-01-01T12:00:00+00:00",
       "tenant": "40048804-8d66-4d48-b553-3833a5a06749"
@@ -61,7 +63,6 @@ Feature: Edit assets
     And the response should be in JSON
     And the JSON node "id" should be equal to the number 1
     And the JSON node "uuid" should be equal to the string "03012aa6-e87d-45df-8715-c2f49dbca460"
-    And the JSON node "createdAt" should not contain "2000-01-01T12:00:00+00:00"
     And the JSON node "updatedAt" should not contain "2000-01-01T12:00:00+00:00"
     And the JSON node "deletedAt" should not contain "2000-01-01T12:00:00+00:00"
     And the JSON node "tenant" should be equal to "b6ac25fe-3cd6-4100-a054-6bba2fc9ef18"
@@ -74,7 +75,6 @@ Feature: Edit assets
     And the response should be in JSON
     And the JSON node "id" should be equal to the number 1
     And the JSON node "uuid" should be equal to the string "03012aa6-e87d-45df-8715-c2f49dbca460"
-    And the JSON node "createdAt" should not contain "2000-01-01T12:00:00+00:00"
     And the JSON node "updatedAt" should not contain "2000-01-01T12:00:00+00:00"
     And the JSON node "deletedAt" should not contain "2000-01-01T12:00:00+00:00"
     And the JSON node "tenant" should be equal to "b6ac25fe-3cd6-4100-a054-6bba2fc9ef18"
